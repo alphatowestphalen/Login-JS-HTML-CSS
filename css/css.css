@@ -1,0 +1,176 @@
+
+*{
+    /*background-color:rgb(75, 79, 90);
+    opacity: 5;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+     background-image: linear-gradient(to right,rgb(247, 247, 247),rgb(122, 190, 190)); 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.bg{
+   position: fixed;
+   height: 100%;
+   left: 10%;
+   bottom:0;
+   z-index: -1; 
+}
+.containe{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 8fr);
+    padding: 2rem;
+}
+.img img{
+    width: 500px;
+}
+.login-container{
+    position: relative;
+    margin-top: 8%;
+    margin-left: 28%;
+    align-items: center;
+    text-align: center;
+}
+.avatar{
+    width: 100px;    
+    margin-bottom: -9%;
+}
+form{
+    width: 360px;
+}
+form h2{
+    font-size: 1.8rem;
+    text-decoration: uppercase;
+    margin: 8% 0 -6% 0;
+    color: #3F3D56;
+}
+.input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom:  1px solid rgb(121, 136, 165);
+}
+.input-div:after, .input-div:before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 4px;
+    background-color: rgb(121, 136, 165);
+    transition: .3s;
+}
+.input-div:after{
+    right: 50%;
+}
+.input-div:before{
+    left: 50%;
+}
+
+.input-div.focus div h5{
+    top: -5px;
+    font-size: 15px;
+}
+.input-div.focus:after, .input-div.focus:before{
+    width: 50%;
+}
+.input-div .user{
+    margin-top: 0;
+}
+
+.input-div .psw{
+    margin-bottom: 4px;
+}
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i img{
+    width: 25px;
+    transition: .3s; 
+}
+.img img{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4%;
+    height: 100%;
+    width: 100%;
+
+}
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+.input-div  div .nom{
+    cursor: default;
+    position: absolute; 
+    left: 28px;
+    top: 12px;
+    transform: translate(-50%); 
+    color: #3F3D56;
+    font-size: 18px;
+    transition: .3s; 
+}
+.input-div  div .psw{
+    cursor: default;
+    position: absolute; 
+    left: 50px;
+    top: 12px;
+    transform: translate(-50%); 
+    color: #3F3D56;
+    font-size: 18px;
+    transition: .3s; 
+}
+.input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #3F3D56;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #3F3D56;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+a:hover{
+    color: rgb(4, 73, 115);
+} 
+.btn{
+  display: block;
+  width: 50%;
+  height: 80%;
+  padding: 5px;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 25%;
+  font-size:1.5rem;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 1s;
+  background-image: linear-gradient(to right, rgb(7, 12, 19),rgb(121, 136, 165),rgb(23, 31, 44));  
+}
+.btn:hover{
+    background-position: right;
+}
